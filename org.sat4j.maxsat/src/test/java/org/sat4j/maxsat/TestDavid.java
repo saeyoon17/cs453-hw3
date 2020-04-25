@@ -158,4 +158,46 @@ public class TestDavid {
         assertFalse(opt.model(2));
         assertFalse(opt.model(3));
     }
+
+    @Test
+    public void saeyoon_reset_test() throws ContradictionException,
+            TimeoutException {
+        WeightedMaxSatDecorator maxsat = new WeightedMaxSatDecorator(
+                SolverFactory.newLight());
+        maxsat.newVar(3);
+        IVecInt literals_temp = new VecInt();
+        literals_temp.push(1).push(-2).push(3);
+        maxsat.addHardClause(literals_temp);
+        literals_temp.clear();
+        literals_temp.push(-1).push(-2);
+        maxsat.addHardClause(literals_temp);
+        literals_temp.clear();
+        literals_temp.push(-2).push(3);
+        IVecInt coefs_temp = new VecInt().push(10).push(5);
+        maxsat.addWeightedLiteralsToMinimize(literals_temp, coefs_temp);
+        /* My implementation */
+        maxsat.reset();
+        assertTrue(maxsat.coefs.size() == 0);
+        assertTrue(maxsat.lits.size() == 0);
+    }
+    @Test
+    public void saeyoon_boundary_test() throws ContradictionException,
+            TimeoutException {
+        WeightedMaxSatDecorator maxsat = new WeightedMaxSatDecorator(
+                SolverFactory.newLight());
+        maxsat.newVar(3);
+        IVecInt literals_temp = new VecInt();
+        literals_temp.push(1).push(-2).push(3);
+        maxsat.addHardClause(literals_temp);
+        literals_temp.clear();
+        literals_temp.push(-1).push(-2);
+        maxsat.addHardClause(literals_temp);
+        literals_temp.clear();
+        literals_temp.push(-2).push(3);
+        IVecInt coefs_temp = new VecInt().push(10).push(5);
+        maxsat.addWeightedLiteralsToMinimize(literals_temp, coefs_temp);
+        /* My implementation */
+        assertTrue(maxsat.coefs.size() == 2);
+        assertTrue(maxsat.lits.size() == 2);
+    }
 }

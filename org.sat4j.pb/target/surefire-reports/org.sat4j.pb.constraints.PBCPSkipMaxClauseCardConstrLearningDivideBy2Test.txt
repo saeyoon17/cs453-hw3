@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sat4j.pb.constraints.PBCPSkipMaxClauseCardConstrLearningDivideBy2Test
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.099 s - in org.sat4j.pb.constraints.PBCPSkipMaxClauseCardConstrLearningDivideBy2Test

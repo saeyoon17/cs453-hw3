@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.sat4j.sat"},{"l":"org.sat4j.sat.visu"}]

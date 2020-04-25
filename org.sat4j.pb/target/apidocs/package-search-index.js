@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.sat4j.pb"},{"l":"org.sat4j.pb.constraints"},{"l":"org.sat4j.pb.constraints.pb"},{"l":"org.sat4j.pb.core"},{"l":"org.sat4j.pb.multiobjective"},{"l":"org.sat4j.pb.orders"},{"l":"org.sat4j.pb.reader"},{"l":"org.sat4j.pb.tools"}]

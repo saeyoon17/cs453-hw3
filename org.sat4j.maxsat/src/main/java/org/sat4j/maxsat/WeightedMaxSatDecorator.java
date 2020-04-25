@@ -65,9 +65,9 @@ public class WeightedMaxSatDecorator extends PBSolverDecorator implements Weight
     private boolean maxVarIdFixed = false;
     private final boolean equivalence;
 
-    private final IVecInt lits = new VecInt();
+    IVecInt lits = new VecInt();
 
-    private final IVec<BigInteger> coefs = new Vec<BigInteger>();
+    IVec<BigInteger> coefs = new Vec<BigInteger>();
 
     private final ObjectiveFunction obj = new ObjectiveFunction(this.lits,
             this.coefs);

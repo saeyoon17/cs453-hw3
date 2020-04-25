@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sat4j.pb.constraints.PuebloWatchedPbClauseAtLeastConstrWithPBConstrLearningTest
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.585 s - in org.sat4j.pb.constraints.PuebloWatchedPbClauseAtLeastConstrWithPBConstrLearningTest

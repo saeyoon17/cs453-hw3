@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sat4j.pb.constraints.CounterPBWithClauseCardConstrLearningReduceToClauseTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.126 s - in org.sat4j.pb.constraints.CounterPBWithClauseCardConstrLearningReduceToClauseTest
